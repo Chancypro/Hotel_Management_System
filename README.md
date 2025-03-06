@@ -1,1 +1,1 @@
-A hotel management system built with java.
+A hotel management system written in Java.
