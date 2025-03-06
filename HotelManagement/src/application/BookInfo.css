@@ -1,0 +1,23 @@
+#back
+{
+	-fx-background-image:url('/resourcefile/frmback.png');
+}
+#title
+{
+	-fx-graphic: url('/resourcefile/submittit.png');
+    -fx-graphic-resize: true; 
+}
+#window
+{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, #808080, 8, 0.5, 1, 1);
+}
+.rx-fill-button
+{
+	-rx-fill: #B68564;
+	-fx-border-radius:5px;
+}

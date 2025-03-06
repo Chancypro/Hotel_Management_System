@@ -1,0 +1,16 @@
+#back
+{
+	-fx-background-image: url('/resourcefile/stage.png');
+    -fx-background-size: cover;
+}
+#quit{
+    -fx-background-image: url('/resourcefile/exit70.png');
+    -fx-background-size: cover; /* 或 contain，根据需要选择合适的选项 */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.rx-fill-button
+{
+	-rx-fill: #B68564;
+	-fx-border-radius:5px;
+}

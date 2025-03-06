@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back" maxWidth="823.0" prefHeight="470.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AssessController">
+   <children>
+      <Label fx:id="title" layoutX="327.0" layoutY="45.0" prefHeight="46.0" prefWidth="170.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <VBox layoutX="73.0" layoutY="154.0" prefHeight="246.0" prefWidth="101.0" spacing="25.0">
+         <children>
+            <CheckBox fx:id="jiaotong" mnemonicParsing="false" text="交通便利">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="tingche" mnemonicParsing="false" text="停车方便">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="sheshi" mnemonicParsing="false" text="设施完善">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="ganjing" mnemonicParsing="false" text="干净舒适">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="jiage" mnemonicParsing="false" text="价格实惠">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="fuwu" mnemonicParsing="false" text="服务态度好">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+         </children>
+         <padding>
+            <Insets top="3.0" />
+         </padding>
+      </VBox>
+      <TextArea fx:id="assessArea" layoutX="174.0" layoutY="154.0" prefHeight="246.0" prefWidth="577.0" promptText="我的评价：">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Slider fx:id="ratingSlider" layoutX="160.0" layoutY="118.0" max="5.0" prefHeight="28.0" prefWidth="145.0" />
+      <Label layoutX="73.0" layoutY="118.0" prefHeight="28.0" prefWidth="87.0" text="我的评分：">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="scoreLabel" layoutX="317.0" layoutY="111.0" prefHeight="43.0" prefWidth="61.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <RXFillButton fx:id="subBtn" layoutX="671.0" layoutY="410.0" onAction="#handleSubmit" prefHeight="30.0" prefWidth="80.0" text="提 交" />
+   </children>
+</AnchorPane>

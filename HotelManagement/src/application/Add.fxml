@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="back" prefHeight="386.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="-14.0" layoutY="44.0" prefHeight="386.0" prefWidth="529.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title" prefHeight="46.0" prefWidth="170.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="554.0">
+               <children>
+                  <Label fx:id="idlabel" text="房间号：" />
+                  <TextField fx:id="idfield" prefHeight="30.0" prefWidth="100.0" />
+                  <Label fx:id="levellabel" text="客房等级：">
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="levelcom" prefHeight="30.0" prefWidth="100.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="46.0" prefWidth="550.0">
+               <children>
+                  <RXFillButton fx:id="savebut" fillType="CIRCLE_TO_SIDE" onAction="#savehandler" prefHeight="30.0" prefWidth="80.0" text="保 存" />
+                  <RXFillButton fx:id="canclebut" fillType="CIRCLE_TO_SIDE" onAction="#canclehandler" prefHeight="30.0" prefWidth="80.0" text="取 消">
+                     <HBox.margin>
+                        <Insets left="90.0" />
+                     </HBox.margin>
+                  </RXFillButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

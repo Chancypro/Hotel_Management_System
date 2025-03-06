@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxmlController">
+   <children>
+      <LineChart fx:id="dailyProfitLineChart" layoutX="110.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1200.0" visible="false">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <LineChart fx:id="fooddailyProfitLineChart" layoutX="110.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1200.0" visible="false">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <LineChart fx:id="monthlyProfitLineChart" layoutX="110.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1200.0" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="foodmonthlyProfitLineChart" layoutX="110.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1200.0" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <PieChart fx:id="roomProfitPieChart" layoutX="110.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1200.0" visible="false" />
+      <PieChart fx:id="foodroomProfitPieChart" layoutX="110.0" layoutY="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1200.0" visible="false" />
+      <Button fx:id="returnBtn2" layoutX="1289.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleReturn2" prefHeight="43.0" prefWidth="43.0" />
+      <HBox alignment="CENTER" layoutX="134.0" layoutY="248.0" spacing="5.0">
+         <children>
+            <Label fx:id="lbl_date" text="选择日期：" />
+            <ComboBox fx:id="chooseyear" prefHeight="30.0" prefWidth="80.0" />
+            <Label fx:id="lbl_year" text="年" />
+            <ComboBox fx:id="choosemonth" prefHeight="30.0" prefWidth="80.0" />
+            <Label fx:id="lbl_month" text="月" />
+         </children>
+      </HBox>
+      <HBox layoutX="121.0" layoutY="195.0" prefWidth="1200.0" spacing="85.0">
+         <children>
+            <RXFillButton fx:id="monthlyLineChartMenuItem" fillType="CIRCLE_TO_SIDE" onAction="#showMonthlyLineChart" prefHeight="30.0" prefWidth="120.0" text="年度订房收入">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></RXFillButton>
+            <RXFillButton fx:id="dailyLineChartMenuItem" fillType="CIRCLE_TO_SIDE" onAction="#showDailyLineChart" prefHeight="30.0" prefWidth="120.0" text="本月订房收入" />
+            <RXFillButton fx:id="pieChartMenuItem" fillType="CIRCLE_TO_SIDE" onAction="#showPieChart" prefHeight="30.0" prefWidth="120.0" text="累计订房收入" />
+            <RXFillButton fx:id="foodmonthlyLineChartMenuItem" fillType="CIRCLE_TO_SIDE" onAction="#showfoodMonthlyLineChart" prefHeight="30.0" prefWidth="120.0" text="年度商品收入" />
+            <RXFillButton fx:id="fooddailyLineChartMenuItem" fillType="CIRCLE_TO_SIDE" onAction="#showfoodDailyLineChart" prefHeight="30.0" prefWidth="120.0" text="本月商品收入" />
+            <RXFillButton fx:id="foodpieChartMenuItem" fillType="CIRCLE_TO_SIDE" onAction="#showfoodPieChart" prefHeight="30.0" prefWidth="120.0" text="累计商品收入" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets right="20.0" />
+   </padding>
+</AnchorPane>

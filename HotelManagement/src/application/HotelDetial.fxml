@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="back" prefHeight="492.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HotelDetialController">
+   <children>
+      <HBox fx:id="vback" alignment="CENTER" layoutX="59.0" layoutY="112.0" prefHeight="324.0" prefWidth="561.0">
+         <children>
+            <VBox prefHeight="476.0" prefWidth="322.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="369.0" text="交通        停车场" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="服务        接机服务 收费" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               开放时间：00:00-23:59" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               叫车服务" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               送机服务 收费" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               开放时间：00:00-23:59" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               租车服务" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               送站服务 收费" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               开放时间：00:00-23:59" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               接站服务 收费" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               开放时间：00:00-23:59" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               代客泊车" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" top="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label prefHeight="26.0" prefWidth="369.0" text="娱乐        茶室" />
+                  <Label prefHeight="26.0" prefWidth="369.0" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="设施        游泳池" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               健身房" />
+                  <Label prefHeight="26.0" prefWidth="369.0" />
+                  <Label prefHeight="22.0" prefWidth="390.0" text="商务        商务中心                          快递服务" />
+                  <Label prefHeight="22.0" prefWidth="398.0" text="服务        传真复印                          多功能厅" />
+                  <Label prefHeight="26.0" prefWidth="369.0" text="               多媒体演示系统" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="30.0" right="30.0" top="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="title" layoutX="254.0" layoutY="53.0" prefHeight="46.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>

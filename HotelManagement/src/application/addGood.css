@@ -1,0 +1,15 @@
+#back
+{
+	-fx-background-image:url('/resourcefile/frmback.png');
+}
+#title
+{
+	-fx-graphic: url('/resourcefile/addgoodtitle.png');
+    -fx-graphic-resize: true;
+    
+}
+.rx-fill-button
+{
+	-rx-fill: #B68564;
+	-fx-border-radius:5px;
+}

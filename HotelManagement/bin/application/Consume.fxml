@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="back" prefHeight="693.0" prefWidth="1361.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConsumeController">
+   <children>
+      <VBox layoutX="438.0" layoutY="141.0" prefHeight="567.0" prefWidth="921.0" spacing="20.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" fillHeight="false">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="房间号：">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ComboBox fx:id="roomid" prefHeight="30.0" prefWidth="120.0" promptText="选择房间号" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="时间：">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="orderTime" strokeType="OUTSIDE" strokeWidth="0.0" text="orderTime" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="总价：">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="SumSetText" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="75.00000312784687" />
+                  <RXFillButton fx:id="checkNumBtn" fillType="CIRCLE_TO_SIDE" onAction="#priceSumSet" prefHeight="30.0" prefWidth="100.0" text="计算总价">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </RXFillButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="商品：">
+                     <HBox.margin>
+                        <Insets left="112.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ComboBox fx:id="goodsBox" prefHeight="30.0" prefWidth="120.0" promptText="选择商品" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="数量：">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="num" prefHeight="30.0" prefWidth="50.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="折后价：">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="saleText" prefHeight="30.0" prefWidth="100.0" />
+                  <ComboBox fx:id="saleBox" onAction="#SetSale" prefHeight="30.0" prefWidth="80.0" promptText="打折" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <RXFillButton fx:id="checkBookBtn" fillType="CIRCLE_TO_SIDE" onAction="#checkBook" prefHeight="30.0" prefWidth="100.0" text="确认订购" />
+                  <RXFillButton fx:id="delete" fillType="CIRCLE_TO_SIDE" onAction="#deleteData" prefHeight="30.0" prefWidth="100.0" text="删除订单">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </RXFillButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane fx:id="scroll">
+               <content>
+                  <TableView fx:id="bookview" prefHeight="389.0" prefWidth="1074.0">
+                    <columns>
+                      <TableColumn fx:id="cidcol" prefWidth="90.0" text="订单号" />
+                      <TableColumn fx:id="roomidcol" prefWidth="90.0" text="房间号" />
+                        <TableColumn fx:id="goodcol" prefWidth="238.0" text="商品" />
+                        <TableColumn fx:id="yearcol" prefWidth="75.0" text="年" />
+                        <TableColumn fx:id="monthcol" prefWidth="91.0" text="月" />
+                        <TableColumn fx:id="daycol" prefWidth="86.0" text="日" />
+                        <TableColumn fx:id="numcol" prefWidth="145.0" text="订购数量" />
+                        <TableColumn fx:id="pricecol" prefWidth="131.0" text="价格" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button fx:id="returnBtn5" layoutX="1284.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleReturn5" prefHeight="43.0" prefWidth="43.0" />
+   </children>
+</AnchorPane>

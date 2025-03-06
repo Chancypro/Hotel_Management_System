@@ -1,0 +1,17 @@
+#root
+{
+	-fx-background-image:url('/resourcefile/newback.png');
+	-fx-background-size: cover;
+}
+.rx-fill-button
+{
+	-rx-fill: #B68564;
+	-fx-border-radius:5px;
+}
+#returnBtn2
+{
+	-fx-background-image: url('/resourcefile/exit70.png');
+    -fx-background-size: cover; /* 或 contain，根据需要选择合适的选项 */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

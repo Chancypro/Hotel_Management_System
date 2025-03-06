@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import com.leewyatt.rxcontrols.controls.RXPasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="back" prefHeight="498.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <StackPane fx:id="loginwindowpa" layoutX="507.0" layoutY="136.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <VBox fx:id="loginwindow" alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="289.0" prefWidth="280.0" spacing="20.0">
+               <children>
+                  <Label fx:id="title" prefHeight="75.0" prefWidth="89.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Label>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label text="用户名" />
+                        <TextField fx:id="userId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="请输入管理员id" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label text="密码" />
+                        <RXPasswordField fx:id="userPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="请输入密码" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="280.0">
+                     <children>
+                        <RXFillButton fx:id="loginBtn" fillType="CIRCLE_TO_SIDE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleLogin" prefHeight="30.0" prefWidth="70.0" text="登 录">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </RXFillButton>
+                        <RXFillButton fx:id="cancelBtn" fillType="CIRCLE_TO_SIDE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleCancel" prefHeight="30.0" prefWidth="70.0" text="退 出">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin></RXFillButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

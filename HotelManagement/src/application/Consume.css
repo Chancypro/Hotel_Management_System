@@ -1,0 +1,76 @@
+#back
+{
+	-fx-background-image: url('/resourcefile/newback.png');
+    -fx-background-size: cover;
+}
+#returnBtn5
+{
+	-fx-background-image: url('/resourcefile/exit70.png');
+    -fx-background-size: cover; /* 或 contain，根据需要选择合适的选项 */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+ .table-view {
+    -fx-background-color: #FFF7EE;
+}
+
+.table-view .column-header {
+    -fx-background-color: #845535;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFF7EE;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #E8DBCF;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #845535;
+    -fx-text-fill: white;
+}
+
+.rx-translation-button {
+    -fx-background-color: #E8DBCF;
+    -fx-text-fill: #845535;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-font-family:Georgia;
+}
+
+/* 设置滚动条的颜色*/  
+.scroll-pane .scroll-bar {
+    -fx-background-color: #E8DBCF;
+}
+
+/* 设置滚动条的大小 */
+.scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 15px;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-pref-height: 15px;
+
+}
+
+/* 设置滚动条上的滑块的颜色 */
+.scroll-pane .thumb {
+    -fx-background-color: white;
+}
+
+.table-cell {
+    -fx-alignment: center;
+}
+
+.rx-fill-button
+{
+	-rx-fill: #B68564;
+	-fx-border-radius:5px;
+}

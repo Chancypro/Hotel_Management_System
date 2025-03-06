@@ -1,0 +1,19 @@
+#back
+{
+	-fx-background-image:url('/resourcefile/frmback.png');
+}
+#title
+{
+	-fx-graphic: url('/resourcefile/htitle.png');
+    -fx-graphic-resize: true;
+    
+}
+#vback
+{
+	-fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, #808080, 8, 0.5, 1, 1);
+}

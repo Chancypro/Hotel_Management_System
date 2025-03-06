@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back" prefHeight="386.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChangeController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="3.0" layoutY="71.0" prefHeight="625.0" prefWidth="977.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title" alignment="CENTER" prefHeight="46.0" prefWidth="170.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="60.0" prefWidth="773.0">
+               <children>
+                  <Label fx:id="roomidlabel" text="房间号：" />
+                  <ComboBox fx:id="idcom" prefHeight="30.0" prefWidth="105.0" promptText="请选择房间" />
+                  <Label fx:id="statuslabel" text="客房状态：">
+                     <HBox.margin>
+                        <Insets left="90.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="statusfield" prefHeight="30.0" prefWidth="100.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="60.0" prefWidth="1099.0">
+               <children>
+                  <Label fx:id="levellabel" text="客房等级：">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="levelcom" prefHeight="30.0" prefWidth="100.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="60.0" prefWidth="536.0">
+               <children>
+                  <RXFillButton fx:id="savebut" fillType="CIRCLE_TO_SIDE" onAction="#savehandler" prefHeight="30.0" prefWidth="80.0" text="保 存" />
+                  <RXFillButton fx:id="canclebut" fillType="CIRCLE_TO_SIDE" onAction="#canclehandler" prefHeight="30.0" prefWidth="80.0" text="取 消">
+                     <HBox.margin>
+                        <Insets left="90.0" />
+                     </HBox.margin>
+                  </RXFillButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

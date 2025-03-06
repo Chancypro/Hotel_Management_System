@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back" prefHeight="645.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookInfoController">
+   <children>
+      <Label fx:id="title" layoutX="376.0" layoutY="86.0" prefHeight="46.0" prefWidth="170.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <VBox fx:id="window" layoutX="92.0" layoutY="189.0" prefHeight="369.0" prefWidth="738.0" spacing="25.0">
+         <children>
+            <Label text="请填写订房信息：">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="49.0" text="姓名：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gname" prefHeight="30.0" prefWidth="120.0" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="50.0" text="房型：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="182.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="type" editable="false" prefHeight="30.0" prefWidth="120.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="47.0" text="性别：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" prefHeight="30.0" text="男">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" prefHeight="30.0" text="女" toggleGroup="$sex">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="73.0" text="入住日期：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="178.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="date" editable="false" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="75.0" text="身份证号：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gid" prefHeight="30.0" prefWidth="200.0" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="76.0" text="订单时间：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="orderTime" editable="false" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="60.0" text="手机号：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gphone" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <RXFillButton fx:id="submitBtn" fillType="CIRCLE_TO_SIDE" onAction="#handleSubmit" prefHeight="30.0" prefWidth="80.0" text="提 交">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </RXFillButton>
+                  <RXFillButton fx:id="cancelBtn" fillType="CIRCLE_TO_SIDE" onAction="#handleCancel" prefHeight="30.0" prefWidth="80.0" text="取 消">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </RXFillButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

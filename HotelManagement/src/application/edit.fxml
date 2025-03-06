@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="back" prefHeight="355.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.editController">
+   <children>
+      <VBox alignment="CENTER" layoutX="79.0" layoutY="24.0" prefHeight="307.0" prefWidth="290.0" spacing="10.0">
+         <children>
+            <Label fx:id="title" prefHeight="46.0" prefWidth="170.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="选择商品：" wrappingWidth="80.0" />
+                  <ComboBox fx:id="goodsBox" prefHeight="30.0" prefWidth="160.0" promptText="选择要编辑的商品" />
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="商品名称：" wrappingWidth="80.0" />
+                  <TextField fx:id="goodname" prefHeight="30.0" prefWidth="160.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="商品价格：" wrappingWidth="80.0" />
+                  <TextField fx:id="goodprice" prefHeight="30.0" prefWidth="160.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="商品类型：" wrappingWidth="80.0" />
+                  <ComboBox fx:id="goodtype" prefHeight="30.0" prefWidth="160.0" promptText="请选择商品类型" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false">
+               <children>
+                  <RXFillButton fx:id="saveBtn" onAction="#saveEdit" prefHeight="30.0" prefWidth="80.0" text="保 存" />
+                  <RXFillButton fx:id="quitBtn" onAction="#exit" prefHeight="30.0" prefWidth="80.0" text="取 消">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </RXFillButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

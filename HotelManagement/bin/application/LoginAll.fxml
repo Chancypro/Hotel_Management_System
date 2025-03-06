@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXCarousel?>
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginAllController">
+   <children>
+      <VBox fx:id="window" fillWidth="false" layoutX="705.0" layoutY="227.0" prefHeight="248.0" prefWidth="378.0">
+         <children>
+            <Label fx:id="title" prefHeight="46.0" prefWidth="170.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <HBox>
+               <children>
+                  <RadioButton fx:id="admin" mnemonicParsing="false" text="管理员">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="id" />
+                     </toggleGroup>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="guest" mnemonicParsing="false" text="游客" toggleGroup="$id">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <RXFillButton fx:id="yesBtn" onAction="#handleYes" prefHeight="30.0" prefWidth="80.0" text="确 定">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="250.0" right="40.0" top="40.0" />
+               </VBox.margin>
+            </RXFillButton>
+         </children>
+      </VBox>
+      <RXCarousel fx:id="test" layoutX="34.0" layoutY="181.0" prefHeight="337.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

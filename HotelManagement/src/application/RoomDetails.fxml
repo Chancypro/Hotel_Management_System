@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="back" prefHeight="696.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RoomDetailsController">
+   <children>
+      <Label fx:id="title" layoutX="511.0" layoutY="71.0" prefHeight="46.0" prefWidth="170.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <VBox fx:id="window" layoutX="56.0" layoutY="158.0" spacing="30.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="房型：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="showType" editable="false" prefHeight="30.0" prefWidth="150.0" />
+                  <Label text="面积：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="showArea" editable="false" prefHeight="30.0" prefWidth="150.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" fillHeight="false">
+               <children>
+                  <Label text="详细信息：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="347.0" prefWidth="469.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="401.0" text="食品饮品：瓶装水免费，电热水壶，茶包" />
+                        <Label prefHeight="27.0" prefWidth="401.0" />
+                        <Label prefHeight="27.0" prefWidth="401.0" text="费用政策：加床：该房型不可加床" />
+                        <Label prefHeight="27.0" prefWidth="401.0" text="                 停车场：有免费停车场" />
+                        <Label prefHeight="27.0" prefWidth="401.0" />
+                        <Label prefHeight="27.0" prefWidth="431.0" text="便利设施：多种规格电源插座免费，遮光窗帘，手动窗帘，书桌，座椅，办公用" />
+                        <Label prefHeight="27.0" prefWidth="430.0" text="                 品（笔、便签），针线包免费，空调，暖气，客房WiFi免费，衣架，" />
+                        <Label prefHeight="27.0" prefWidth="401.0" text="                 一次性拖鞋" />
+                        <Label prefHeight="27.0" prefWidth="401.0" />
+                        <Label prefHeight="27.0" prefWidth="401.0" text="媒体科技：电话，液晶电视机" />
+                        <Label prefHeight="27.0" prefWidth="401.0" />
+                        <Label prefHeight="27.0" prefWidth="401.0" text="浴室配套：独立卫生间，24小时热水，吹风机，拖鞋，浴巾" />
+                        <Label prefHeight="27.0" prefWidth="401.0" />
+                        <Label prefHeight="27.0" prefWidth="472.0" text="洗浴用品：牙刷，牙膏，洗发水，沐浴露，护发素，浴帽，香皂，梳子，毛巾，" />
+                        <Label prefHeight="27.0" prefWidth="472.0" text="                 剃须刀" />
+                        <Label prefHeight="27.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="pic" fitHeight="272.0" fitWidth="408.0" layoutX="710.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
